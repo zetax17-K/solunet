@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SOLUNET</title>
+</head>
+<body>
+  <h1>SOLUNET</h1>
+  <div class="contenedor">
+    <div class="plan" id="normal">
+        <h2 class="h2">Plan Normal</h2>
+        <img src="media/normal.png" alt="Plan Normal" height="300" width="145" class="normal">
+        <p class="price">$10/mes</p>
+        <p class="description">Descripción del Plan Normal.</p>
+        <button onclick="mostrarInfo('normal')">Ver más info</button>
+    </div>
+
+    <div class="plan" id="pro">
+        <h2 class="h2">Plan Pro</h2>
+        <img src="media/pro.png" alt="Plan Pro" height="300" width="145" class="pro">
+        <p class="price">$20/mes</p>
+        <p class="description">Descripción del Plan Pro.</p>
+        <button onclick="mostrarInfo('pro')">Ver más info</button>
+    </div>
+
+    <div class="plan" id="premium">
+        <h2 class="h2">Plan Premium</h2>
+        <img src="media/premium.png" alt="Plan Premium" height="300" width="145" class="premium">
+        <p class="price">$30/mes</p>
+        <p class="description">Descripción del Plan Premium.</p>
+        <button onclick="mostrarInfo('premium')">Ver más info</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <div id="info"></div>
+        </div>
+    </div>
+  </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
