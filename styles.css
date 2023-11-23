@@ -21,14 +21,6 @@ h1 {
     gap: 2vw; /* Ajusta el espacio entre los elementos usando unidades de vista */
 }
 
-.normal,
-.pro,
-.premium {
-    box-shadow: 5px 5px 5px #D4AF37;
-    border-radius: 20px;
-    margin-bottom: 2vw; /* Ajusta el espacio entre los elementos usando unidades de vista */
-}
-
 /*NORMAL*/
 .normal {
     box-shadow: 5px 5px 5px #D4AF37;
