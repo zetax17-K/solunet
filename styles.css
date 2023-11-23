@@ -5,50 +5,63 @@ body {
 
 h1 {
     display: grid;
-    place-items: center; 
+    place-items: center;
     font-size: 50px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 10%;
     color: white;
-}
-
-img {
-    border-radius: 20px;
-}
-
-img:hover {
-    border-radius: 20px;
-    height:310px;
-    width:150px;
 }
 
 .contenedor {
     display: grid;
-    place-items: center; 
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 60px;
 }
 
-.normal{
+/*NORMAL*/
+.normal {
     box-shadow: 5px 5px 5px #D4AF37;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
-.normal:hover{
+
+.normal:hover {
     box-shadow: 10px 10px 10px #D4AF37;
+    border-radius: 20px;
+    height: 310px;
+    width: 150px;
 }
 
-.pro{
+/*PRO*/
+.pro {
     box-shadow: 5px 5px 5px #3fc4e9;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
-.pro:hover{
+.pro:hover {
     box-shadow: 10px 10px 10px #3fc4e9;
+    border-radius: 20px;
+    height: 310px;
+    width: 150px;
 }
 
-.premium{
+
+/*PREMIUM*/
+.premium {
     box-shadow: 5px 5px 5px #ae52b0;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
-.premium:hover{
+.premium:hover {
     box-shadow: 10px 10px 10px #ae52b0;
+    border-radius: 20px;
+    height: 310px;
+    width: 150px;
 }
+
 
 .plan {
     border: 1px solid #fafbfd;
@@ -57,7 +70,8 @@ img:hover {
     box-shadow: 5px 5px 5px 5px #fafbfd;
     padding: 20px;
     text-align: center;
-    width: 100%;
+    margin-left: 250%;
+    width: 80%;
 }
 
 .price {
@@ -112,11 +126,37 @@ button:hover {
     cursor: pointer;
 }
 
-
-@media (max-width: 700px) {
-    .contenedor {
-        grid-template-columns: 10fr;
-        width: 500px;
-    }
+.logo {
+    margin-left: 32%;
+    display: flex;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
 }
 
+@media screen and (max-width: 600px) {
+    .contenedor {
+        grid-template-columns: 1fr; 
+        margin-right: 15%;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin-left: 25%; 
+        margin-top: 2%;
+        margin-bottom: 30%;
+    }
+    .logo img {
+        order: -1;
+        margin-bottom: 2px; 
+    }
+    h1 {
+        margin-left: 25%; 
+    }
+    .plan {
+        margin-left: 15%; 
+        width: 90%; 
+    }
+}
