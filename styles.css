@@ -6,11 +6,11 @@ body {
 h1 {
     display: grid;
     place-items: center;
-    font-size: 50px;
+    font-size: 100px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 10%;
+    margin-left: 5%;
     color: white;
 }
 
@@ -50,7 +50,7 @@ h1 {
     box-shadow: 5px 5px 5px 5px #fafbfd;
     padding: 2vw; /* Ajusta el relleno utilizando unidades de vista */
     text-align: center;
-    margin-left: 15%;
+    margin-left: 250%;
     width: 70%; /* Ajusta el ancho utilizando porcentaje */
 }
 
@@ -107,13 +107,21 @@ button:hover {
 }
 
 .logo {
-    margin-left: 32%;
     display: flex;
     margin-bottom: 2vw; /* Ajusta el espacio entre los elementos utilizando unidades de vista */
+    margin-left: 25%;
     height: 20vw; /* Ajusta la altura utilizando unidades de vista */
     width: 20vw; /* Ajusta el ancho utilizando unidades de vista */
     border-radius: 50%;
 }
+
+.logo img{
+    height: 200px;
+    width: 200px;
+    margin-right: 70px;
+    margin-top: 40px;
+}
+
 
 @media screen and (max-width: 600px) {
     .contenedor {
@@ -127,9 +135,14 @@ button:hover {
     }
     .logo img {
         margin-bottom: 1vw; /* Ajusta el espacio entre la imagen y el texto utilizando unidades de vista */
+        height: 150px;
+        width: 150px;
+        margin-right: 0px;
+        margin-top: 5px;
     }
     h1 {
         margin-left: 5%;
+        font-size: 50px;
     }
     .plan {
         margin-left: 5%;
@@ -137,4 +150,3 @@ button:hover {
         margin-top: 10%;
     }
 }
-
