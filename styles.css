@@ -27,12 +27,11 @@ h1 {
     border-radius: 20px;
     margin-bottom: 20px;
 }
-.normal {
+.normal:hover {
     box-shadow: 10px 10px 10px #D4AF37;
     border-radius: 20px;
     margin-bottom: 20px;
 }
-
 
 /*PRO*/
 .pro {
@@ -40,7 +39,7 @@ h1 {
     border-radius: 20px;
     margin-bottom: 20px;
 }
-.pro {
+.pro:hover {
     box-shadow: 10px 10px 10px #3fc4e9;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -163,5 +162,41 @@ button:hover {
         margin-left: 5%;
         width: 90%;
         margin-top: 10%;
+    }
+    /*NORMAL*/
+    .normal {
+        box-shadow: 5px 5px 5px #D4AF37;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .normal:hover {
+        box-shadow: 10px 10px 10px #D4AF37;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    /*PRO*/
+    .pro {
+        box-shadow: 5px 5px 5px #3fc4e9;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .pro:hover {
+        box-shadow: 10px 10px 10px #3fc4e9;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*PREMIUM*/
+    .premium {
+        box-shadow: 5px 5px 5px #ae52b0;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .premium:hover {
+        box-shadow: 10px 10px 10px #ae52b0;
+        border-radius: 20px;
+        margin-bottom: 20px;
     }
 }
