@@ -18,60 +18,35 @@ h1 {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 60px;
+    gap: 2vw; /* Ajusta el espacio entre los elementos usando unidades de vista */
 }
 
-/*NORMAL*/
-.normal {
+.normal,
+.pro,
+.premium {
     box-shadow: 5px 5px 5px #D4AF37;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 2vw; /* Ajusta el espacio entre los elementos usando unidades de vista */
 }
 
-.normal:hover {
+.normal:hover,
+.pro:hover,
+.premium:hover {
     box-shadow: 10px 10px 10px #D4AF37;
     border-radius: 20px;
-    height: 310px;
-    width: 150px;
+    height: 30vw; /* Ajusta el alto utilizando unidades de vista */
+    width: 90%; /* Ajusta el ancho utilizando porcentaje */
 }
-
-/*PRO*/
-.pro {
-    box-shadow: 5px 5px 5px #3fc4e9;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-.pro:hover {
-    box-shadow: 10px 10px 10px #3fc4e9;
-    border-radius: 20px;
-    height: 310px;
-    width: 150px;
-}
-
-
-/*PREMIUM*/
-.premium {
-    box-shadow: 5px 5px 5px #ae52b0;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-.premium:hover {
-    box-shadow: 10px 10px 10px #ae52b0;
-    border-radius: 20px;
-    height: 310px;
-    width: 150px;
-}
-
 
 .plan {
     border: 1px solid #fafbfd;
     border-radius: 20px;
     background: #f8f8ff;
     box-shadow: 5px 5px 5px 5px #fafbfd;
-    padding: 20px;
+    padding: 2vw; /* Ajusta el relleno utilizando unidades de vista */
     text-align: center;
-    margin-left: 250%;
-    width: 80%;
+    margin-left: 15%;
+    width: 70%; /* Ajusta el ancho utilizando porcentaje */
 }
 
 .price {
@@ -82,7 +57,7 @@ h1 {
 button {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 1vw 2vw; /* Ajusta el relleno utilizando unidades de vista */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -107,7 +82,7 @@ button:hover {
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
-    padding: 20px;
+    padding: 2vw; /* Ajusta el relleno utilizando unidades de vista */
     border: 1px solid #888;
     width: 80%;
 }
@@ -115,7 +90,7 @@ button:hover {
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 2vw; /* Ajusta el tamaño de la fuente utilizando unidades de vista */
     font-weight: bold;
 }
 
@@ -129,36 +104,31 @@ button:hover {
 .logo {
     margin-left: 32%;
     display: flex;
-    margin-bottom: 20px;
-    height: 150px;
-    width: 150px;
-    border-radius: 50px;
+    margin-bottom: 2vw; /* Ajusta el espacio entre los elementos utilizando unidades de vista */
+    height: 20vw; /* Ajusta la altura utilizando unidades de vista */
+    width: 20vw; /* Ajusta el ancho utilizando unidades de vista */
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 600px) {
     .contenedor {
-        grid-template-columns: 1fr; 
-        margin-right: 15%;
+        grid-template-columns: 1fr;
+        margin-right: 5%; /* Ajusta el margen derecho para dispositivos móviles */
     }
     .logo {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        margin-left: 25%; 
-        margin-top: 2%;
-        margin-bottom: 30%;
+        margin-left: 5%;
+        margin-top: 2vw; /* Ajusta el margen superior utilizando unidades de vista */
+        margin-bottom: 5vw; /* Ajusta el margen inferior utilizando unidades de vista */
     }
     .logo img {
-        order: -1;
-        margin-bottom: 2px; 
-        height: 50px;
-        width: 50px;
+        margin-bottom: 1vw; /* Ajusta el espacio entre la imagen y el texto utilizando unidades de vista */
     }
     h1 {
-        margin-left: 25%; 
+        margin-left: 5%;
     }
     .plan {
-        margin-left: 15%; 
-        width: 90%; 
+        margin-left: 5%;
+        width: 90%;
     }
 }
+
