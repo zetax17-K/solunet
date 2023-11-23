@@ -27,6 +27,11 @@ h1 {
     border-radius: 20px;
     margin-bottom: 20px;
 }
+.normal {
+    box-shadow: 10px 10px 10px #D4AF37;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
 
 
 /*PRO*/
@@ -35,10 +40,20 @@ h1 {
     border-radius: 20px;
     margin-bottom: 20px;
 }
+.pro {
+    box-shadow: 10px 10px 10px #3fc4e9;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
 
 /*PREMIUM*/
 .premium {
     box-shadow: 5px 5px 5px #ae52b0;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.premium:hover {
+    box-shadow: 10px 10px 10px #ae52b0;
     border-radius: 20px;
     margin-bottom: 20px;
 }
@@ -131,14 +146,14 @@ button:hover {
     .logo {
         margin-left: 5%;
         margin-top: 2vw; /* Ajusta el margen superior utilizando unidades de vista */
-        margin-bottom: 5vw; /* Ajusta el margen inferior utilizando unidades de vista */
+        margin-bottom: 10vw; /* Ajusta el margen inferior utilizando unidades de vista */
     }
     .logo img {
         margin-bottom: 1vw; /* Ajusta el espacio entre la imagen y el texto utilizando unidades de vista */
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
         margin-right: 0px;
-        margin-top: 20px;
+        margin-top: 5px;
     }
     h1 {
         margin-left: 5%;
